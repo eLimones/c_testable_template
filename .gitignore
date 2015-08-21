@@ -5,3 +5,10 @@
 !/include
 !/Makefile
 !/.gitignore
+
+!/tests
+/*/objects
+!/tests/*.sh
+!/*/source
+!/*/include
+!/*/Makefile

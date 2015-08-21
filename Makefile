@@ -5,7 +5,7 @@ LIB_DIRS:=
 EXEC_TARGET:=myprog
 
 ##FILES THAT NEED TO BE COMPILED
-CFILES:= main.c
+CFILES:= main.c mylib.c
 ##LIBRARIES THAT NEED TO BE CREATED
 LIBFILES:=
 ##EXISTING LIBNAMES THAT NEED TO BE LINKED lib<name>
@@ -39,5 +39,10 @@ $(DIRS): %:
 clean:
 	rm -fr $(DIRS)
 	rm -f $(EXEC_TARGET)
+	make -s --directory=tests clean
 run: $(EXEC_TARGET)
 	./$(EXEC_TARGET)
+buildTest:
+	make -s --directory=tests
+test:
+	make -s --directory=tests test
