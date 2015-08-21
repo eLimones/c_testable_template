@@ -1,5 +1,7 @@
 /*
 /objects
+/tests/*/objects
+/tests/*/*
 
 !/source
 !/include
@@ -7,7 +9,6 @@
 !/.gitignore
 
 !/tests
-/*/objects
 !/tests/*.sh
 !/*/source
 !/*/include
