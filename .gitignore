@@ -2,6 +2,7 @@
 /objects
 /tests/*/objects
 /tests/*/*
+/*/*.swp
 
 !/source
 !/include
@@ -10,6 +11,7 @@
 
 !/tests
 !/tests/*.sh
-!/*/source
-!/*/include
-!/*/Makefile
+!/tests/Makefile
+!/tests/*/source
+!/tests/*/include
+!/tests/*/Makefile
